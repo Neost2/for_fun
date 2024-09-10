@@ -4,8 +4,9 @@
 
 touch /home/neost/for_fun/fun
 touch /home/neost/for_fun/fun/README.md
-mv /home/neost/for_fun/fun.sh /home/neost/for_fun/fun/fun.sh
+cp /home/neost/for_fun/number_guessing_game.sh /home/neost/for_fun/fun/fun.sh
 
+chmod -x /home/neost/for_fun/fun/fun.sh
 ./home/neost/for_fun/fun/fun.sh
 
 while [ $(grep -c "100" "/home/neost/for_fun/fun/fun.txt") =~ 1]; do
@@ -18,8 +19,5 @@ while [ $(grep -c "100" "/home/neost/for_fun/fun/fun.txt") =~ 1]; do
 	fi
 done
 
-rm /home/neost/for_fun/fun/README.md
-rm /home/neost/for_fun/fun/fun.sh
-rm /home/neost/for_fun/fun/fun.txt
 rmdir /home/neost/for_fun/fun
  
